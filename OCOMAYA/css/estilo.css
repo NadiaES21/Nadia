@@ -1,0 +1,845 @@
+:root {
+  --color-fondo: #BB4176;
+  --color-coral: #F6501E;
+  --color-verde: #30A950;
+  --color-azul: #1887BB;
+  --color-rosa: #92166E;
+  --color-violeta: #6D3EAA;
+  --color-mostaza: #F5C206;
+  --color-verde-oscuro: #005D3B;
+  --color-blanco: floralwhite;
+  --color-gris-oscuro:#111;
+}
+
+body {
+  background-color: floralwhite;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.tituloindex{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  color: var(--color-blanco);
+}
+
+.titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  color: var(--color-verde-oscuro);
+}
+
+/*INICIAR SECION VISITANTE*/
+
+.portada {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.img-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.contenido-portada {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: left;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 5%;
+  max-width: 600px;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+
+/*descripcion de la pagina principal*/
+.descripcion {
+  text-align: center;
+  color: var(--color-R);
+  font-size: 1rem;
+  margin-bottom: 60px;
+}
+
+/*IMAGENES 3*/
+/*IMAGENES DISTANCIAS 3*/
+.imagenes-nosotros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;  /*HACIA ARRIBA ESPACIO*/
+  margin: 0px auto 38px auto; /*HACIA ABAJO ESPACIO*/
+  max-width: 1100px;
+  padding: 0 15px;
+}
+
+/*TAMAÑO 3 IMAGENES*/
+.imagen-item {
+  text-align: center;
+  width: 330px;
+  transition: transform 0.3s ease;
+}
+
+.imagen-item:hover {
+  transform: scale(1.05);
+}
+
+.imagen-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.imagen-item p {
+  margin-top: 10px;
+  font-weight: 500;
+  color: var(--color-rosa);
+}
+
+.nosotros {
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.nosotros p {
+  font-size: 1rem;
+  color: var(--color-verde);
+  line-height: 1.6;
+}
+
+
+
+/* Personalización artesanal de la barra menú */
+/*barra*/
+.navbar-artesanal {
+  background-color: var(--color-verde-oscuro) !important;
+}
+
+/*botones*/
+.navbar-artesanal .nav-link,
+.navbar-artesanal .navbar-brand {
+  color: var(--color-mostaza) !important;
+}
+
+/*blanco al dejar de pasar*/
+.navbar-artesanal .nav-link:hover,
+.navbar-artesanal .navbar-brand:hover {
+  color: #FFFFFF !important;
+}
+
+.navbar-artesanal .dropdown-menu-dark {
+  background-color: var(--color-verde-oscuro);   /*cuadro color verde menu productos*/
+}
+
+/*botones*/
+.navbar-artesanal .dropdown-item {
+  color: #FFD800;   /*color letras mnu*/
+}
+
+.navbar-artesanal .dropdown-item:hover {
+  background-color: var(--color-verde);  /*al pasar mouse vrd*/
+  color: white;
+}
+
+
+
+
+/*TODO ABAJO DE LAS 3 IMAGENES PAGCLIENTE INDEXPAG*/
+.ocosinguito {
+  background: var(--color-blanco);
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contenido {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+
+.textos {
+  flex: 1 1 600px;
+}
+
+.textos h2 {
+  font-size: 32px;
+  color: var(--color-fondo);
+}
+
+.subtitulo {
+  margin: 10px 0 30px;
+  color: var(--color-violeta);
+}
+
+.tzeltal {
+  display: block;
+  font-style: italic;
+  color: var(--color-verde-oscuro);
+  font-size: 14px;
+}
+
+.caracteristicas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.item {
+  background: #fff;
+  padding: 15px;
+  border-left: 6px solid var(--color-verde-oscuro);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  color: #444;
+}
+
+.item i {
+  font-size: 24px;
+  color: var(--color-fondo);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.item h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: var(--color-gris-oscuro);
+}
+
+.item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.imagen {
+  flex: 1 1 400px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.imagen img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/*abajo abajo de 3 de 4*/
+.artesanias-chiapas {
+    background: var(--color-blanco);
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.artesanias-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.imagen-artesania img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.artesanias-texto {
+    flex: 1 1 500px;
+}
+
+.artesanias-texto h2 {
+    font-size: 2.2em;
+    color: var(--color-fondo);
+    margin-bottom: 15px;
+}
+
+.artesanias-texto p {
+    font-size: 1.1em;
+    color: var(--color-gris-oscuro);
+    margin-bottom: 25px;
+}
+
+.lista-productos {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.lista-productos li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: var(--color-verde-oscuro);
+}
+
+.btn-explorar {
+    background-color: var(--color-coral);
+    color: var(--color-blanco);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-explorar:hover {
+    background-color: var(--color-verde);
+}
+
+
+
+/*seccion abajo de 4 cuadros index*/
+
+.seccion-destacada {
+    background-color: var(--color-blanco);
+    padding: 40px 30px;
+}
+
+.contenido-destacado {
+    display: flex;
+    align-items: center; /*texto alado */
+    justify-content: center;
+    gap: 100px; /*texto alado imagen*/
+    flex-wrap: wrap;
+    max-width: 2100px;
+    margin: auto;
+}
+
+.imagen-lado img {
+    width: 250%;
+    max-width: 420px; /*imagen al frente*/
+    border-radius: 30;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.texto-lado {
+    max-width: 500px;
+}
+
+.texto-lado h2 {
+    font-size: 2.2em;
+    color: var(--color-fondo);
+    margin-bottom: 25px;
+}
+
+.texto-lado p {
+    font-size: 1.1em;
+    color: var(--color-gris-oscuro);
+    margin-bottom: 40px;
+}
+
+.boton-destacado {
+    display: inline-block;
+    background-color: var(--color-coral);
+    color: var(--color-blanco);
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+ /*cambiar color al pasar el mouse*/
+.boton-destacado:hover {
+    background-color: var(--color-verde );
+}
+ 
+
+
+/*imagenes 5*/
+
+.seccion-artesanos {
+  background-color: var(--color-blanco);
+  padding: 90px 60px;
+  text-align: center;
+}
+
+.titulo-artesanos {
+  font-size: 2.5em;
+  color: var(--color-fondo);
+  margin-bottom: 40px;
+}
+
+.tarjetas-artesanos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tarjeta {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 220px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+  font-size: 1.2em;
+  color: var(--color-fondo);
+  margin: 10px 0 5px;
+}
+
+.tarjeta p {
+  font-size: 0.95em;
+  color: var(--color-gris-oscuro);
+  margin-bottom: 10px;
+}
+
+.tarjeta a {
+  font-weight: bold;
+  color: var(--color-coral);
+  text-decoration: none;
+}
+
+.tarjeta a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*foter*/
+
+.pie-artesanal {
+  background: var(--color-gris-oscuro);
+  color: var(--color-blanco);
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contenedor-footer {
+  max-width: 900px;
+  margin: auto;
+}
+
+.pie-artesanal p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: var(--color-blanco);
+}
+
+.pie-artesanal a {
+  color: var(--color-mostaza);
+  text-decoration: none;
+}
+
+.pie-artesanal a:hover {
+  color: var(--color-verde);
+}
+
+.redes-sociales {
+  margin: 20px 0;
+}
+
+.redes-sociales a {
+  display: inline-block;
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: var(--color-violeta);
+  color: var(--color-mostaza);
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.redes-sociales a:hover {
+  background: var(--color-mostaza);
+  color: var(--color-violeta);
+}
+
+
+
+
+
+/*product trajes*/
+
+
+.galeria-trajes {
+  background-color: var(--color-blanco);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.galeria-trajes h2 {
+  font-size: 2.3em;
+  color: var(--color-fondo);
+  margin-bottom: 30px;
+}
+
+.contenedor-trajes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.tarjeta-traje {
+  background-color: #fff;
+  border-radius: 18px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-traje:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-traje img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.tarjeta-traje h3 {
+  font-size: 1.2em;
+  color: var(--color-violeta);
+  margin-bottom: 8px;
+}
+
+.tarjeta-traje .artesano {
+  color: var(--color-verde-oscuro);
+  font-size: 0.95em;
+  margin-bottom: 6px;
+}
+
+.tarjeta-traje .precio {
+  font-weight: bold;
+  color: var(--color-coral);
+  margin-bottom: 12px;
+}
+
+.tarjeta-traje .ver-mas {
+  background-color: var(--color-mostaza);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.tarjeta-traje .ver-mas:hover {
+  background-color: var(--color-verde);
+}
+
+
+
+
+
+
+/*ESTILO PARA EL INICIAR SESS*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-blanco);
+}
+
+/* Encabezado superior */
+.banner {
+  background-color: var(--color-verde-oscuro);
+  color: var(--color-mostaza);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título del formulario */
+h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: var(--color-gris-oscuro);
+}
+
+/* Contenedor del formulario */
+.form-container {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: var(--color-gris-oscuro);
+}
+
+/* Campos de texto */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  background-color: var(--color-verde);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #d2f2d2;
+}
+
+/* Botón ENTRAR */
+button {
+  width: 100%;
+  background-color: var(--color-azul);
+  color: white;
+  padding: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: var(--color-violeta);
+}
+
+/* Texto del enlace de registro */
+.registro-texto {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+a {
+  color: var(--color-azul);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*REGISTRO DE PERS*/
+
+.banner {
+  background-color: var(--color-verde-oscuro);
+  color: var(--color-mostaza);
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: var(--color-gris-oscuro);
+}
+
+.form-container {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: var(--color-gris-oscuro);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  background-color: var(--color-verde);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #d2f2d2;
+}
+
+button {
+  width: 100%;
+  background-color: var(--color-azul);
+  color: white;
+  padding: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: var(--color-violeta);
+}
+
+a {
+  color: var(--color-azul);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+/*ocomaya de footer*/
+
+
+
+/*para trajes tipicos */
+
+
+.galeria-trajes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.tarjeta-traje {
+  background: var(--color-blanco); /*fondo del recuadro*/
+  border-radius: 12px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.tarjeta-traje:hover {
+  transform: translateY(-5px);
+}
+
+.imagen-traje {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.nombre-artesano {
+  color: var(--color-verde-oscuro);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.nombre-traje {
+  font-weight: bold;
+  color: var(--color-gris-oscuro);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.precio-traje {
+  color: var(--color-coral);
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.boton-traje {
+  background-color: var(--color-verde-oscuro); /*recuadroooo desc */
+  color: var(--color-blanco); /*descripcion dentrp textp*/
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-traje:hover {
+  background-color: var(--color-verde); /*cambio color a verde */
+}
